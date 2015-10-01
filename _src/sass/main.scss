@@ -1,0 +1,47 @@
+//Settings: Global variables, site-wide settings, config switches, etc.
+//Tools: Site-wide mixins and functions.
+//Generic: Low-specificity, far-reaching rulesets (e.g. resets).
+//Base: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+//Objects: Objects, abstractions, and design patterns (e.g. .media {}).
+//Components: Discrete, complete chunks of UI (e.g. .carousel {}). This is the //one layer that inuitcss doesn’t get involved with.
+//Trumps: High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {})
+
+// setting
+@import "../bower_components/inuit-defaults/settings.defaults";
+@import "../bower_components/inuit-responsive-settings/settings.responsive";
+// tools
+@import "../bower_components/inuit-functions/tools.functions";
+@import "../bower_components/inuit-mixins/tools.mixins";
+@import "../bower_components/inuit-tools-widths/_tools.widths";
+@include inuit-widths(12);
+@import "../bower_components/inuit-responsive-tools/tools.responsive";
+
+$inuit-layout-namespace:        grid-;
+
+@import "../bower_components/inuit-layout/objects.layout";
+// generics
+@import "../bower_components/inuit-reset/generic.reset";
+@import "../bower_components/inuit-normalize/generic.normalize";
+@import "../bower_components/inuit-box-sizing/generic.box-sizing";
+@import "./generic/_generic.helper";
+// Base
+@import "../bower_components/inuit-page/base.page";
+@import "./base/base.font";
+@import "../bower_components/inuit-headings/_base.headings";
+
+// object
+@import "../bower_components/inuit-media/objects.media";
+@import "../bower_components/inuit-list-bare/objects.list-bare";
+
+$inuit-base-spacing-unit--small:    round($inuit-base-spacing-unit / 2);
+$inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
+@import "objects/objects.nav";
+@import "objects/objects.wrappers";
+
+// components
+
+//Trumps
+@import "../bower_components/inuit-widths/trumps.widths";
+@import "../bower_components/inuit-clearfix/_trumps.clearfix";
+@import "../bower_components/inuit-headings-trumps/trumps.headings";
+@import "../bower_components/inuit-print/trumps.print";
