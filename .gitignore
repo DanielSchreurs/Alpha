@@ -1,5 +1,5 @@
 /_src/bower_components
-/_dist
+!/_dist
 *.psd
 
 *.scssc
