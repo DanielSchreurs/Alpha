@@ -1,0 +1,18 @@
+include ../_content
+- var home = true ;
+doctype html
+html(class="no-js" lang="fr")
+    head
+        include ../partials/_head
+        title="Centre Alpha | accueil"
+        meta(name="description" content="")
+    body(class="home")
+        include ../partials/_IE_8
+        include ../partials/_header
+        main(class="" role="main")
+            include ./partials/_introduction
+            include ./partials/_make
+            include ./partials/_slider
+            include ./partials/_contact
+            include ./partials/_carte
+        include ../partials/_footer
