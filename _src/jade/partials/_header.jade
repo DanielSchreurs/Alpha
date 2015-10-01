@@ -1,0 +1,16 @@
+div(class="header--fixed ")
+    div(class="wrapper")
+        div(class="header grid-layout" role="baner")
+            div(class="logo grid-layout__item u-2/12")
+                img(src="./logo.svg", alt="Ceci est le logo du site")
+            div(class="menu-container logo grid-layout__item u-10/12")
+                ul(class="nav nav--block")
+                    each href, lien in nav 
+                           li(class="")
+                               a(href=href,title="Ouvre la page" class="transition")= lien
+                    li(class="")
+                        a(href="#",) Afficher le formulaire de recherche
+                        form(id="", method="", action="")
+                            label(for='recherche') Introduisez votre rechcerhe
+                            input(type="text", placeholder="")
+                            button(type="submit", ) Rechercher
