@@ -8,3 +8,4 @@
 - [] Rendre la maquette responsive.
 - [] Faire en sorte que tout cela devienne un `theme` Wordpress.
 - [] Le défendre (avec le sourire) à la personne responsable.
+- [x] Ajouter un sprite SVG compilé depuis GRUNT

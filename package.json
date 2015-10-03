@@ -1,0 +1,23 @@
+{
+  "name": "alpha",
+  "version": "0.0.1",
+  "description": "Bouh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanielSchreurs/Alpha.git"
+  },
+  "author": "Daniel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielSchreurs/Alpha/issues"
+  },
+  "homepage": "https://github.com/DanielSchreurs/Alpha",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-svgstore": "^0.5.0"
+  }
+}
