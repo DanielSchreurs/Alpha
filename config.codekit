@@ -13,11 +13,31 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_dist\/css\/img\/slider.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_dist\/css\/img\/slider.png",
+		"outputAbbreviatedPath": "\/_dist\/css\/img\/slider.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_dist\/css\/main.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_dist\/css\/main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_dist\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_dist\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1677,17 +1697,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/_src\/js\/min\/main-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_src\/js\/min\/main-min.js",
-		"outputAbbreviatedPath": "\/_src\/js\/min\/min\/main-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/_src\/maquettes\/png\/Desktop HD.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1829,6 +1838,38 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/_src\/sass\/components\/_components.make.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/sass\/components\/_components.make.scss",
+		"outputAbbreviatedPath": "\/_src\/sass\/css\/_components.make.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_src\/sass\/components\/_components.slider.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/sass\/components\/_components.slider.scss",
+		"outputAbbreviatedPath": "\/_src\/sass\/css\/_components.slider.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/_src\/sass\/generic\/_generic.helper.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1902,6 +1943,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/sass\/objects\/_objects.nav.scss",
 		"outputAbbreviatedPath": "\/_src\/sass\/css\/_objects.nav.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_src\/sass\/objects\/_objects.sections.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/sass\/objects\/_objects.sections.scss",
+		"outputAbbreviatedPath": "\/_src\/sass\/css\/_objects.sections.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

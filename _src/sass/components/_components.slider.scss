@@ -1,0 +1,46 @@
+/**
+* fixe height
+*/
+.slider{
+    background: url(./img/slider.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.slider--wrapper{
+    position: relative;
+}
+.slider__before{
+    position: absolute;
+    left: 0;
+    top: 45%;
+}
+.slider__next{
+    position: absolute;
+    right: 0;
+    top: 45%;
+}
+.slider__item{
+    text-align: center;
+    height: 0;
+    color: $orange_1;
+    overflow: hidden;
+}
+.slider__item--active{
+    padding-top: 20%;
+    height: 50vh;
+}
+.target{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.target__link{
+    margin-left: .5em;
+}
+.target__link--active{
+    .shape-boullet{
+        fill:$orange_1;
+    }
+}
