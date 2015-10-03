@@ -1,0 +1,73 @@
+.header--fixed{
+    background: $oWhite_2;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.main-vavigation__link{
+    font-size: $inuit-heading-size-4;
+    text-decoration: none;
+    color:$gray;
+    &:hover{
+        color: $orange_1;
+        text-decoration: underline;
+    }
+}
+.slogan{
+    position: relative;
+    top: -$inuit-base-spacing-unit--small;
+    padding-left: $inuit-base-spacing-unit--small;
+    display: inline;
+}
+@media (min-width:730px) {
+    .search-tool{
+
+    }
+    .show-search{
+    }
+    .search-form{
+        padding-top: 2%;
+        position: fixed;
+        top: -200%;
+        left: 0;
+        right: 0;
+        background: $oWhite_1;
+    }
+    .form-input{
+        display: block;
+        line-height: 48px;
+        border: none;
+        border-bottom: 1px solid $gray;
+        background: none;
+        margin-top: 2%;
+        position: relative;
+        z-index: 1;
+        outline: none;
+        width: 100%;
+        font-size: $inuit-heading-size-2;
+    }
+    .search-form-wrapper{
+        width: 80%;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .search-form-label{
+        position: absolute;
+        top: 13px;
+        font-size: $inuit-heading-size-2;
+        font-weight: bold;
+        color: $gray;
+        left: 0;
+    }
+    .form-input:focus+.search-form-label,.search-form-label--active{
+        top: -$inuit-base-spacing-unit;
+        color: $light_gray;
+    }
+    .search-form--open{
+        bottom: 0;
+        top: 70px;
+    }
+}
