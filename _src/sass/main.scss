@@ -9,6 +9,8 @@
 // setting
 @import "../bower_components/inuit-defaults/settings.defaults";
 @import "../bower_components/inuit-responsive-settings/settings.responsive";
+@import "./settings/settings.colors";
+@import "./settings/settings.defaults";
 // tools
 @import "../bower_components/inuit-functions/tools.functions";
 @import "../bower_components/inuit-mixins/tools.mixins";
@@ -23,15 +25,19 @@ $inuit-layout-namespace:        grid-;
 @import "../bower_components/inuit-reset/generic.reset";
 @import "../bower_components/inuit-normalize/generic.normalize";
 @import "../bower_components/inuit-box-sizing/generic.box-sizing";
+@import "../bower_components/inuit-mixins/tools.mixins";
 @import "./generic/_generic.helper";
 // Base
 @import "../bower_components/inuit-page/base.page";
 @import "./base/base.font";
+@import "./base/base.height";
 @import "../bower_components/inuit-headings/_base.headings";
 
 // object
 @import "../bower_components/inuit-media/objects.media";
 @import "../bower_components/inuit-list-bare/objects.list-bare";
+@import "./objects/objects.transition";
+@import "./objects/objects.icons";
 
 $inuit-base-spacing-unit--small:    round($inuit-base-spacing-unit / 2);
 $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
@@ -39,6 +45,9 @@ $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
 @import "objects/objects.wrappers";
 
 // components
+
+@import "components/components.header";
+@import "components/components.introduction";
 
 //Trumps
 @import "../bower_components/inuit-widths/trumps.widths";
