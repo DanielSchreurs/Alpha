@@ -11,6 +11,12 @@ body>svg:first-child{
 .search-tool{
   width: 20px;
   height: 20px;
+  fill:$gray;
+  position: relative;
+  top: 2px;
+  &:hover{
+      fill:$orange_1;
+  }
 }
 .main-logo{
     width: 50px;
