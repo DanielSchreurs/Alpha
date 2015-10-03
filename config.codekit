@@ -22,15 +22,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_dist\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_dist\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_dist\/js\/jquery.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -1879,6 +1870,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/sass\/objects\/_objects.icons.scss",
 		"outputAbbreviatedPath": "\/_src\/sass\/css\/_objects.icons.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_src\/sass\/objects\/_objects.media-vertical.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/sass\/objects\/_objects.media-vertical.scss",
+		"outputAbbreviatedPath": "\/_src\/sass\/css\/_objects.media-vertical.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

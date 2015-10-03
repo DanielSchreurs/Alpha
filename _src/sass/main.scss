@@ -38,6 +38,7 @@ $inuit-layout-namespace:        grid-;
 @import "../bower_components/inuit-list-bare/objects.list-bare";
 @import "./objects/objects.transition";
 @import "./objects/objects.icons";
+@import "./objects/objects.media-vertical";
 
 $inuit-base-spacing-unit--small:    round($inuit-base-spacing-unit / 2);
 $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
