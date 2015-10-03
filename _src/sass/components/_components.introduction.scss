@@ -1,0 +1,18 @@
+.color-container--introcution{
+    background: url(./img/introduction-cover.png) 0 0 no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    background-attachment: fixed;
+
+}
+.main-header{
+    padding-top: 20%;
+    color: $white;
+    text-align: center;
+    font-size: $inuit-heading-size-1*2;
+}
+.main-slogant{
+    display: block;
+    font-size: $inuit-heading-size-5;
+    padding-top: 10%;
+}
