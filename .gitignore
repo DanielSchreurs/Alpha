@@ -1,5 +1,6 @@
 /_src/bower_components
 /_dist
+/node_modules
 *.psd
 
 *.scssc
