@@ -1,0 +1,19 @@
+.btn--huge{
+
+}
+.btn--soft{
+    border-radius: .2em;
+}
+.simple-beige{
+    color: $beige_1;
+    background: none;
+
+}
+.simple-gray{
+    color:$gray_1;
+    background: none;
+    border-color: $light_gray;
+    &:hover{
+        background: $light_gray;
+    }
+}
