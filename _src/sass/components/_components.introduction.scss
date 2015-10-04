@@ -1,18 +1,46 @@
 .color-container--introcution{
     background: url(./img/introduction-cover.png) 0 0 no-repeat;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 80%;
     background-attachment: fixed;
 
 }
 .main-header{
-    padding-top: 20%;
+    padding-top: 15%;
     color: $white;
     text-align: center;
     font-size: $inuit-heading-size-1*2;
+    font-weight: 800;
+    color: white;
+    margin-top: 0;
 }
 .main-slogant{
     display: block;
     font-size: $inuit-heading-size-5;
     padding-top: 10%;
+
+}
+.contact-container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact-container__item{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+.contact-container__item:first-child{
+    text-align: left;
+}
+.contact-container__item:last-child{
+    text-align: right;
+}
+.contact-container__item{
+    .icon{
+        border: 2px solid $orange_1;
+        padding: .5em;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
 }

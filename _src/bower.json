@@ -34,6 +34,7 @@
     "inuit-list-bare": "~0.3.0",
     "inuit-page": "~0.2.1",
     "inuit-print": "~0.0.2",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "inuit-buttons": "~0.4.2"
   }
 }

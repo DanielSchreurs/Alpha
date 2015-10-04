@@ -36,8 +36,11 @@ $inuit-layout-namespace:        grid-;
 // object
 @import "../bower_components/inuit-media/objects.media";
 @import "../bower_components/inuit-list-bare/objects.list-bare";
+@import "../bower_components/inuit-buttons/objects.buttons";
 @import "./objects/objects.transition";
 @import "./objects/objects.icons";
+@import "./objects/objects.btn";
+@import "./objects/objects.links";
 @import "./objects/objects.media-vertical";
 @import "./objects/objects.sections";
 
@@ -52,6 +55,9 @@ $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
 @import "components/components.introduction";
 @import "components/components.make";
 @import "components/components.slider";
+@import "components/components.contact";
+@import "components/components.carte";
+@import "components/components.footer";
 
 //Trumps
 @import "../bower_components/inuit-widths/trumps.widths";
