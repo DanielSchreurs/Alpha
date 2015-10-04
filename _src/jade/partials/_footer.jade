@@ -1,44 +1,52 @@
-footer(class="wrapper")
-    div(class="grid-layout")
-        div(class="grid-layout__item u-1/4")
-            p(class="alpha")="Informations"
-            ul(class="list-bare")
-                li
-                    a(href="http://") Foire aux questions
-                li
-                    a(href="http://") Liens utiles
-                li
-                    a(href="http://") Type d'intervention
-                li
-                    a(href="http://") Horaires
-        div(class="grid-layout__item u-1/4 vcard")
-            p(class="alpha")="Adresse"
-            ul(class="list-bare")
-                li
-                    a(href="http://") Rue des Madelaine
-                li
-                    a(href="http://") 17 4000 Liège
-                li
-                    a(href="http://", class="tel") Fax : 04/223.56.86
-                li
-                    a(href="http://", class="tel") Fax : 04/223.56.86
-        div(class="grid-layout__item u-1/4 vcard")
-            p(class="alpha")="Nous suivre"
-            ul(class="list-bare")
-                li
-                    a(href="http://") Facebook
-                li
-                    a(href="http://") Twitter
-                li
-                    a(href="http://", class="tel") Linkedin
-                li
-                    a(href="http://", class="tel") Skype
-        div(class="grid-layout__item u-1/4 vcard")
-            p(class="alpha")="S’inscrire à la newsletter"
-            p(class="")=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laboriosam ipsa optio qui."
-            form(id="", method="", action="")
-                input(type="email", for="email", name="email")
-                label( id="email") Introduisez votre adresse mail
-                button(type="submit") Evoyez votre adresse mail
+div(class="footer")
+    footer(class="wrapper")
+        div(class="grid-layout")
+            div(class="grid-layout__item u-1/4")
+                p(class="beta footer_header")="Informations"
+                ul(class="list-bare footer__navigation")
+                    li
+                        a(href="#",class="delta footer__link link") Foire aux questions
+                    li
+                        a(href="#",class="delta footer__link link") Liens utiles
+                    li
+                        a(href="#",class="delta footer__link link") Type d'intervention
+                    li
+                        a(href="#",class="delta footer__link link") Horaires
+            div(class="grid-layout__item u-1/4 vcard")
+                p(class="beta footer_header")="Adresse"
+                ul(class="list-bare footer__navigation")
+                    li
+                        a(href="#",class="delta footer__link link") Rue des Madelaine
+                    li
+                        a(href="#",class="delta footer__link link") 17 4000 Liège
+                    li
+                        a(href="#",class="delta footer__link link", class="tel") Fax : 04/223.56.86
+                    li
+                        a(href="#",class="delta footer__link link", class="tel") Fax : 04/223.56.86
+            div(class="grid-layout__item u-1/4 vcard")
+                p(class="beta footer_header")="Nous suivre"
+                ul(class="list-bare footer__navigation")
+                    li
+                        a(href="#",class="delta footer__link link") Facebook
+                    li
+                        a(href="#",class="delta footer__link link") Twitter
+                    li
+                        a(href="#",class="delta footer__link link", class="tel") Linkedin
+                    li
+                        a(href="#",class="delta footer__link link", class="tel") Skype
+            div(class="grid-layout__item u-1/4 vcard")
+                p(class="beta footer_header")="Liens utiles"
+                ul(class="list-bare footer__navigation")
+                    li
+                        a(href="#",class="delta footer__link link") Facebook
+                    li
+                        a(href="#",class="delta footer__link link") Twitter
+                    li
+                        a(href="#",class="delta footer__link link", class="tel") Linkedin
+                    li
+                        a(href="#",class="delta footer__link link", class="tel") Skype
+
+    div(class="copy")
+        p(class="wrapper")!="&copy; Tout droit réservés Daniel Schreurs"
 script(src="./js/jquery.min.js")
 script(src="./js/main-min.js")
