@@ -1,34 +1,78 @@
 /**
 * fixe height
 */
-.slider{
+.slider-container{
     background: url(./img/slider.png);
     background-attachment: fixed;
     background-size: cover;
 }
-.slider--wrapper{
+.slider-wrapper{
     position: relative;
 }
-.slider__before{
-    position: absolute;
-    left: 0;
-    top: 45%;
+.slider {
+  overflow: hidden;
+  margin: 20px auto 0 auto;
 }
-.slider__next{
-    position: absolute;
-    right: 0;
-    top: 45%;
+
+.slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
 }
-.slider__item{
-    text-align: center;
-    height: 0;
+
+.slider ul li {
     color: $orange_1;
-    overflow: hidden;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    font-weight: 600;
 }
+
+.control_prev, .control_next {
+  position: absolute;
+  top: 30%;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+}
+
+.control_prev:hover, .control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+.control_prev {
+    left: 0;
+}
+
+.control_next {
+    right: 0;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+
+
+
+
 .slider__item--active{
     padding-top: 20%;
     height: 50vh;
 }
+
+
 .target{
     position: absolute;
     bottom: 0;
