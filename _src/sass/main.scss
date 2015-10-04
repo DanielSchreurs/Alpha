@@ -14,13 +14,10 @@
 // tools
 @import "../bower_components/inuit-functions/tools.functions";
 @import "../bower_components/inuit-mixins/tools.mixins";
-@import "../bower_components/inuit-tools-widths/_tools.widths";
+@import "../bower_components/inuit-tools-widths/tools.widths";
 @include inuit-widths(12);
 @import "../bower_components/inuit-responsive-tools/tools.responsive";
 
-$inuit-layout-namespace:        grid-;
-
-@import "../bower_components/inuit-layout/objects.layout";
 // generics
 @import "../bower_components/inuit-reset/generic.reset";
 @import "../bower_components/inuit-normalize/generic.normalize";
@@ -34,6 +31,9 @@ $inuit-layout-namespace:        grid-;
 @import "../bower_components/inuit-headings/_base.headings";
 
 // object
+$inuit-layout-namespace:        grid-;
+
+@import "../bower_components/inuit-layout/objects.layout";
 @import "../bower_components/inuit-media/objects.media";
 @import "../bower_components/inuit-list-bare/objects.list-bare";
 @import "../bower_components/inuit-buttons/objects.buttons";
@@ -61,6 +61,7 @@ $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
 
 //Trumps
 @import "../bower_components/inuit-widths/trumps.widths";
+@import "../bower_components/inuit-widths-responsive/trumps.widths-responsive";
 @import "../bower_components/inuit-clearfix/_trumps.clearfix";
 @import "../bower_components/inuit-headings-trumps/trumps.headings";
 @import "../bower_components/inuit-print/trumps.print";
