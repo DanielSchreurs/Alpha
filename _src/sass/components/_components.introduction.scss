@@ -18,7 +18,10 @@
     display: block;
     font-size: $inuit-heading-size-5;
     padding-top: 10%;
-
+    font-size: $inuit-heading-size-2;
+    padding-bottom: 3em;
+    font-weight: 400;
+    letter-spacing: .2em;
 }
 .contact-container{
     max-width: 500px;
@@ -35,12 +38,13 @@
 .contact-container__item:last-child{
     text-align: right;
 }
-.contact-container__item{
+/*.contact-container__item{
     .icon{
         border: 2px solid $orange_1;
         padding: .5em;
         border-radius: 50%;
+        fill:white;
         width: 50px;
         height: 50px;
     }
-}
+}*/

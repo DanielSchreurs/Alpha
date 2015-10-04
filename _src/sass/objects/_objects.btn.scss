@@ -17,3 +17,48 @@
         background: $light_gray;
     }
 }
+
+
+
+/* Antiman */
+.antiman {
+	background: none;
+	border: none;
+	height: 60px;
+    padding: .8em;
+    position: relative;
+}
+.antiman::before,
+.antiman::after {
+	content: '';
+	//z-index: -1;
+	border-radius: inherit;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	-webkit-backface-visibility: hidden;
+	transition: transform 0.3s, opacity 0.3s;
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    background: red;
+}
+.antiman::before {
+	border: 2px solid #37474f;
+	//opacity: 0;
+	transform: scale3d(1.2, 1.2, 1);
+}
+.antiman::after {
+	background: red;
+}
+.antiman:hover::before {
+	opacity: 1;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+.antiman:hover::after {
+	opacity: 0;
+	-webkit-transform: scale3d(0.8, 0.8, 1);
+	transform: scale3d(0.8, 0.8, 1);
+}

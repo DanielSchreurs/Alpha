@@ -23,11 +23,6 @@
     display: inline;
 }
 @media (min-width:820px) {
-    .search-tool{
-
-    }
-    .show-search{
-    }
     .search-form{
         padding-top: 2%;
         position: fixed;
@@ -78,37 +73,11 @@
         font-size: $inuit-heading-size-5;
     }
 }
-@media (max-width:820px) {
-    .nav > li, .nav > li > a{
-        display: block;
-    }
-    .header--fixed{
-        background:none;
-        color: white;
-    }
-    .main-vavigation__link{
-        text-align: left;
-    }
-    .menu-container{
-        max-width: 300px;
-        position: fixed;
-        right: -310px;
-        top: 0;
-        bottom: 0;
-        background: rgba(9, 9, 9, 0.9);
-    }
-    body{
-        overflow-x: hidden;
-    }
-    .menu-container--open{
-        right: 0;
-    }
-}
 
 
 
 $size: 64px;
-.open_nav {
+.open_nav{
     width: $size;
     height: $size;
     position: fixed;
@@ -117,7 +86,7 @@ $size: 64px;
     margin-left: -$size/2;
     margin-top: -$size/2;
     cursor: pointer;
-    display: block;
+    display: none;
     z-index: 1000000;
  .rect {
     stroke-width: 0;
@@ -209,4 +178,36 @@ transform: scale(0.8);
       }
     }
 }
+}
+
+
+
+@media (max-width:820px) {
+    .open_nav {
+        display: block;
+    }
+    .nav > li, .nav > li > a{
+        display: block;
+    }
+    .header--fixed{
+        background:none;
+        color: white;
+    }
+    .main-vavigation__link{
+        text-align: left;
+    }
+    .menu-container{
+        max-width: 300px;
+        position: fixed;
+        right: -310px;
+        top: 0;
+        bottom: 0;
+        background: rgba(9, 9, 9, 0.9);
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .menu-container--open{
+        right: 0;
+    }
 }

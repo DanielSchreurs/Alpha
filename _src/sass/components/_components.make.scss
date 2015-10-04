@@ -1,5 +1,9 @@
 .make_item{
-    padding-bottom: 2em;
+    padding-bottom: $inuit-base-spacing-unit--large;
+    .icon{
+        width: 80px;
+        height: 80px;
+    }
 }
 .make_item__header{
     text-transform: uppercase;
