@@ -1,5 +1,4 @@
-/_src/bower_components
-!/_dist
+bower_components
 /node_modules
 *.psd
 
@@ -7,8 +6,8 @@
 
 *.iml
 
-_src/.idea/.name
-_src/maquettes/
+/.idea/.name
+
 
 *.xml
 
@@ -17,3 +16,4 @@ _src/maquettes/
 *.ai
 
 *.sketch
+.DS_Store
