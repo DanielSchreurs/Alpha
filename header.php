@@ -16,11 +16,12 @@
 <div class="header--fixed">
     <div class="wrapper">
         <div role="baner" class="header grid-layout">
-            <div class="logo grid-layout__item u-3/12 u-1/1-palm">
+            <a href="<?php echo(home_url( '/' )); ?>"  title="Renvoie vers la page d’accueil" class="link link--logo grid-layout__item u-3/12 u-1/1-palm">
                 <svg viewBox="0 0 100 100" class="icon main-logo">
                     <use xlink:href="#shape-logo"></use>
                 </svg>
-                <p class="slogan">Centre Alpha</p></div>
+                <p class="slogan">Centre Alpha</p>
+            </a>
             <div class="menu-container transition logo grid-layout__item u-9/12"><a title="Ouvrir la navigation"
                                                                                     href="#" class="open_nav">
                     <svg viewbox="0 0 64 64">
@@ -34,25 +35,25 @@
                 </a>
                 <?php
                 $defaults = array(
-                    'theme_location'  => 'header-menu',
-                    'menu'            => '',
-                    'container'       => 'ul',
+                    'theme_location' => 'header-menu',
+                    'menu' => '',
+                    'container' => 'ul',
                     'container_class' => '',
-                    'container_id'    => '',
-                    'menu_class'      => 'nav nav--block text--right',
-                    'menu_id'         => '',
-                    'echo'            => true,
-                    'fallback_cb'     => 'wp_page_menu',
-                    'before'          => '',
-                    'after'           => '',
-                    'link_before'     => '',
-                    'link_after'      => '',
-                    'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
-                    'depth'           => 0,
-                    'walker'          => ''
+                    'container_id' => '',
+                    'menu_class' => 'nav nav--block text--right',
+                    'menu_id' => '',
+                    'echo' => true,
+                    'fallback_cb' => 'wp_page_menu',
+                    'before' => '',
+                    'after' => '',
+                    'link_before' => '',
+                    'link_after' => '',
+                    'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+                    'depth' => 0,
+                    'walker' => ''
                 );
 
-                wp_nav_menu( $defaults );
+                wp_nav_menu($defaults);
 
                 ?>
             </div>
