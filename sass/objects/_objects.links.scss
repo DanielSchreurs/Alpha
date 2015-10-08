@@ -1,5 +1,6 @@
 .link{
     text-decoration: none;
+
 }
 .footer__link{
     color: $white;
@@ -15,4 +16,10 @@
     &:hover,&:focus{
         color: $orange_1;
     }
+}
+.link--logo{
+  color: black;
+}
+.header_link{
+  color: inherit;
 }
