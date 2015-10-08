@@ -51,6 +51,17 @@ function create_post_type() {
             'supports'=>['title']
         )
     );
+    register_post_type( 'equipe',
+        array(
+            'labels' => array(
+                'name' => __( 'Équipe' ),
+                'singular_name' => __( 'Équipe' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports'=>['title']
+        )
+    );
 }
 
 function my_function_admin_bar(){
