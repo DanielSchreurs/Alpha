@@ -1,0 +1,31 @@
+.header--404 {
+  color: rgba(39, 39, 39, 0.8);
+  b {
+    margin-top: 1.5em;
+    text-shadow: 1px 4px 6px #AFBAC6, 0 0 0 #000, 1px 4px 6px #AFBAC6;
+    font-weight: 900;
+    text-align: center;
+    font-size: $inuit-heading-size-1*2;
+    display: block;
+    border-bottom: 1px solid $gray_1;
+  }
+  span {
+    padding-top: 1em;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+.big-header {
+  font-size: $inuit-heading-size-1*2;
+}
+
+.big-header--orange{
+  color: $orange_1;
+}
+
+.article_header {
+  color: $gray_1;
+  font-weight: 400;
+}
