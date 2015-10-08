@@ -27,7 +27,9 @@
 // Base
 @import "../bower_components/inuit-page/base.page";
 @import "./base/base.font";
-@import "./base/base.height";
+@import "./base/base.main";
+@import "./base/base.listes";
+@import "./base/base.headers";
 @import "../bower_components/inuit-headings/_base.headings";
 
 // object
@@ -43,6 +45,8 @@ $inuit-layout-namespace:        grid-;
 @import "./objects/objects.links";
 @import "./objects/objects.media-vertical";
 @import "./objects/objects.sections";
+@import "./objects/objects.headers";
+@import "./objects/objects.article";
 
 $inuit-base-spacing-unit--small:    round($inuit-base-spacing-unit / 2);
 $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
