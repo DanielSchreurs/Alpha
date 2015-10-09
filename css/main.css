@@ -803,13 +803,27 @@ html {
   /* [5] */ }
 
 html {
-  font-family: 'Open Sans','Avenir Next','Helvetica Neue' sans-serif; }
+  font-family: 'Open Sans','Avenir Next','Helvetica Neue', sans-serif; }
 
 html, body {
   height: 100%; }
 
 main {
   min-height: 100%; }
+
+main.main {
+  margin-top: 8em; }
+
+ol, ul {
+  list-style-position: inside; }
+
+li {
+  margin-bottom: .3em; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: lowercase; }
+  h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter, h5:first-letter, h6:first-letter {
+    text-transform: uppercase; }
 
 /*------------------------------------*\
     #HEADINGS
@@ -1072,6 +1086,12 @@ body > svg:first-child {
   .footer__link:hover, .footer__link:focus {
     color: #ff6b03; }
 
+.link--logo {
+  color: black; }
+
+.header_link {
+  color: inherit; }
+
 .media-vertical {
   text-align: center; }
 
@@ -1087,6 +1107,45 @@ body > svg:first-child {
 
 .section--first {
   padding-top: 6em; }
+
+.header--404 {
+  color: rgba(39, 39, 39, 0.8); }
+  .header--404 b {
+    margin-top: 1.5em;
+    text-shadow: 1px 4px 6px #AFBAC6, 0 0 0 #000, 1px 4px 6px #AFBAC6;
+    font-weight: 900;
+    text-align: center;
+    font-size: 72px;
+    display: block;
+    border-bottom: 1px solid #c3c3c3; }
+  .header--404 span {
+    padding-top: 1em;
+    display: block;
+    text-align: center;
+    font-weight: 400; }
+
+.big-header {
+  font-size: 72px; }
+
+.big-header--orange {
+  color: #ff6b03; }
+
+.article_header {
+  color: #c3c3c3;
+  font-weight: 400; }
+
+.article {
+  margin-bottom: 1.5em; }
+  .article h3 {
+    font-weight: 400;
+    color: #c3c3c3;
+    margin: 1em 0 .8em; }
+
+.article-container p, .article-container ul, .article-container ol {
+  font-family: Bitter, Georgia, serif; }
+
+.article_paragraph {
+  margin-bottom: 1.5em; }
 
 /*------------------------------------*\
     $NAV
@@ -1238,6 +1297,9 @@ body > svg:first-child {
   .main-vavigation__link a:hover {
     color: #ff6b03;
     text-decoration: underline; }
+
+.nav--block > li > a {
+  padding-top: 24px; }
 
 .slogan {
   position: relative;
