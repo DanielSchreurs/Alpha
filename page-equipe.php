@@ -12,8 +12,20 @@
         <h1 class="article_header"><?php _e('Sorry, no posts matched your criteria.'); ?></h1>
     <?php endif; ?>
 
-    <div>
-        bouh
+
+    <div class="vCard-container">
+        <?php $query = new WP_Query(array('post_type' => 'equipe')); ?>
+        <?php while ($query->have_posts()) : $query->the_post(); ?>
+            <ul>
+                <li class="people">
+                    <dl>
+                        <dt class="people__first_name"><?php the_field('nom'); ?> <span><?php the_field('prenom') ?></span></dt>
+                        <dd><?php the_field('poste') ?></dd>
+                        <dd><?php the_field('secteur_dactivite') ?></dd>
+                    </dl>
+                </li>
+            </ul>
+        <?php endwhile; ?>
     </div>
 </main>
 <?php get_footer(); ?>
