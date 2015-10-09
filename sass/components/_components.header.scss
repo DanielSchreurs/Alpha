@@ -17,6 +17,9 @@
     }
   }
 }
+.nav--block > li > a{
+    padding-top: $inuit-base-spacing-unit;
+}
 .slogan{
     position: relative;
     top: -$inuit-base-spacing-unit--small;
