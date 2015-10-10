@@ -44,5 +44,9 @@
     </div>
 </div>
 <?php wp_footer(); ?>
+<?php if(is_home()): ?>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="<?= get_template_directory_uri(); ?>/js/map.js"></script>
+<?php endif; ?>
 </body>
 </html>

@@ -1613,14 +1613,15 @@ body > svg:first-child {
   padding-bottom: 2.3em;
   display: block; }
 
-.carte-container iframe {
+.carte-container {
   width: 100%;
   pointer-events: none;
   min-height: 30vh;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   position: relative;
-  bottom: -7px; }
+  bottom: -7px;
+  min-height: 300px; }
 
 .footer {
   background: #283b49;
