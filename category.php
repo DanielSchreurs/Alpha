@@ -2,7 +2,8 @@
 <!--[if IE 8]
     <p class="section__paragraphe">Votre Navigateur n’est pas à jour. Mettez-le à jour<a href="http://browsehappy.com/">ici.</a></p><![endif]-->
 <main role="main" class="wrapper main article-container ">
-    <h1 class="big-header text--right big-header--orange"><?php single_cat_title(); ?></h1>
+    <h1 class="big-header text--right big-header--<?php the_field('couleur_titre','parentalite'); ?>"><?php single_cat_title(); ?></h1>
+    <?php wp_reset_postdata(); ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="article">
             <h2 class="article_header"><a href="<?php the_permalink(); ?>" class="header_link"><?php the_title(); ?></a></h2>
@@ -11,6 +12,6 @@
     <?php endwhile;
     else: ?>
         <h2 class="article_header"><?php _e('Sorry, no posts matched your criteria.'); ?></h2>
-    <?php endif; ?>
+    <?php  endif; ?>
 </main>
 <?php get_footer(); ?>
