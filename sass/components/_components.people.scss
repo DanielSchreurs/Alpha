@@ -1,0 +1,53 @@
+.people-container{
+  margin-bottom: $inuit-base-spacing-unit--large;
+}
+.people-carte{
+  position: relative;
+  padding-top:100px;
+  margin-top: 100px;
+  background: #f8f8f8;
+  padding-left:$inuit-base-spacing-unit ;
+  padding-right: $inuit-base-spacing-unit;
+  padding-bottom: $inuit-base-spacing-unit--small;
+  min-height: 400px;
+  &:hover{
+    .people__header{
+      color: $orange_1;
+    }
+    .people__image{
+      border-color: $orange_1;
+    }
+  }
+
+}
+.people__header{
+  text-align: center;
+  padding: $inuit-base-spacing-unit;
+  font-weight: bold;
+  color: $light_gray;
+  min-height: 100px;
+}
+.people__body{
+  margin-bottom: 5em;
+}
+.people__image{
+  display: block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -75px;
+  left: 30%;
+  border: 7px solid white;
+}
+.people-meta{
+  text-align: center;
+  display: block;
+  min-height: 50px;
+}
+.people-meta--slogan{
+
+  font-family: $serif;
+  margin-top: 2em;
+  font-style: italic;
+}
