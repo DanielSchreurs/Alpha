@@ -503,6 +503,9 @@ html {
 .weight--bold {
   font-weight: 800 !important; }
 
+.serif {
+  font-family: Bitter, Georgia, serif; }
+
 /**
  * Add/remove margins
  */
@@ -896,6 +899,12 @@ h6 {
   width: 100%;
   /* [4] */ }
 
+/**
+ * Align layout items to the vertical centers of each other.
+ */
+.grid-layout--middle > .grid-layout__item {
+  vertical-align: middle; }
+
 /*------------------------------------*\
     #MEDIA
 \*------------------------------------*/
@@ -964,8 +973,9 @@ h6 {
   /* [6] */
   padding: 11px 23px;
   /* [7] */
-  background-color: #4a8ec2;
-  border: 1px solid #4a8ec2; }
+  background-color: #BADA55;
+  border: 1px solid #BADA55;
+  border-radius: 3px; }
   .btn, .btn:hover, .btn:active, .btn:focus {
     text-decoration: none;
     /* [4] */
@@ -978,10 +988,21 @@ h6 {
   border: 0;
   padding: 0; }
 
+/**
+ * Full-width buttons.
+ */
+.btn--full {
+  width: 100%; }
+
 .transition {
   -webkit-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   -o-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
+
+.transition--soft {
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
 
 body > svg:first-child {
   display: none; }
@@ -1145,7 +1166,12 @@ body > svg:first-child {
   font-family: Bitter, Georgia, serif; }
 
 .article_paragraph {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  font-family: Bitter, Georgia, serif; }
+
+.article_paragraph p {
+  margin-bottom: 1.5em;
+  font-family: Bitter, Georgia, serif; }
 
 /*------------------------------------*\
     $NAV
@@ -1635,6 +1661,53 @@ body > svg:first-child {
 
 .footer__navigation {
   margin: 1em 0; }
+
+.people-container {
+  margin-bottom: 48px; }
+
+.people-carte {
+  position: relative;
+  padding-top: 100px;
+  margin-top: 100px;
+  background: #f8f8f8;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  min-height: 400px; }
+  .people-carte:hover .people__header {
+    color: #ff6b03; }
+  .people-carte:hover .people__image {
+    border-color: #ff6b03; }
+
+.people__header {
+  text-align: center;
+  padding: 24px;
+  font-weight: bold;
+  color: #dddddd;
+  min-height: 100px; }
+
+.people__body {
+  margin-bottom: 5em; }
+
+.people__image {
+  display: block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -75px;
+  left: 30%;
+  border: 7px solid white; }
+
+.people-meta {
+  text-align: center;
+  display: block;
+  min-height: 50px; }
+
+.people-meta--slogan {
+  font-family: Bitter, Georgia, serif;
+  margin-top: 2em;
+  font-style: italic; }
 
 /*------------------------------------*\
     #WIDTHS
