@@ -3,3 +3,8 @@
     -o-transition: all .2s cubic-bezier(.17,.67,.83,.67);
     transition: all .2s cubic-bezier(.17,.67,.83,.67);
 }
+.transition--soft{
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
