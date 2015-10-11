@@ -11,6 +11,10 @@
     else: ?>
         <h1 class="article_header"><?php _e('Sorry, no posts matched your criteria.'); ?></h1>
     <?php endif; ?>
-    <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 5 ); } ?>
+    <?php if (function_exists('ninja_forms_display_form')): ?>
+        <div class="form-wrapper">
+          <?php ninja_forms_display_form(5); ?>
+        </div>
+    <?php endif; ?>
 </main>
 <?php get_footer(); ?>
