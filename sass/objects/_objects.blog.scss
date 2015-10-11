@@ -1,0 +1,13 @@
+.grey-blog{
+  background: $light_gray;
+  margin-bottom: 2em;
+  padding: $inuit-base-spacing-unit;
+}
+.grey-blog__item{
+  display: block;
+  font-weight: 600;
+  @extend .epsilon;
+}
+.grey-blog__item--light{
+  font-weight: 200;
+}
