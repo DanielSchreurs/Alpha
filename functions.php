@@ -62,6 +62,17 @@ function create_post_type() {
             'supports'=>['title']
         )
     );
+    register_post_type( 'contact',
+        array(
+            'labels' => array(
+                'name' => __( 'contact' ),
+                'singular_name' => __( 'contact' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports'=>['title']
+        )
+    );
 }
 
 function my_function_admin_bar(){
