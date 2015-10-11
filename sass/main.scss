@@ -47,6 +47,8 @@ $inuit-layout-namespace:        grid-;
 @import "./objects/objects.sections";
 @import "./objects/objects.headers";
 @import "./objects/objects.article";
+@import "./objects/objects.forms";
+@import "./objects/objects.blog";
 
 $inuit-base-spacing-unit--small:    round($inuit-base-spacing-unit / 2);
 $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
