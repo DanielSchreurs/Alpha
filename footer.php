@@ -30,12 +30,27 @@
             </div>
             <div class="grid-layout__item u-1/4 u-1/2-lap u-1/1-palm vcard">
                 <p class="beta footer_header">Liens utiles</p>
-                <ul class="list-bare footer__navigation">
-                    <li><a href="#" class="delta footer__link transition link">Facebook</a></li>
-                    <li><a href="#" class="delta footer__link transition link">Twitter</a></li>
-                    <li><a href="#" class="delta footer__link transition link tel">Linkedin</a></li>
-                    <li><a href="#" class="delta footer__link transition link tel">Skype</a></li>
-                </ul>
+                <?php
+                $defaults = array(
+                    'theme_location' => 'liens_utiles',
+                    'menu' => '',
+                    'container' => 'ul',
+                    'container_class' => '',
+                    'container_id' => '',
+                    'menu_class' => 'list-bare footer__navigation',
+                    'menu_id' => '',
+                    'echo' => true,
+                    'fallback_cb' => 'wp_page_menu',
+                    'before' => '',
+                    'after' => '',
+                    'link_before' => '',
+                    'link_after' => '',
+                    'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+                    'depth' => 0,
+                    'walker' => ''
+                );
+                wp_nav_menu($defaults);
+                ?>
             </div>
         </div>
     </footer>
@@ -44,7 +59,7 @@
     </div>
 </div>
 <?php wp_footer(); ?>
-<?php if(is_home()|| is_page( '10' ) ): ?>
+<?php if (is_home() || is_page('10')): ?>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="<?= get_template_directory_uri(); ?>/js/map.js"></script>
 <?php endif; ?>
