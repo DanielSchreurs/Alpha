@@ -1,5 +1,5 @@
 <!DOCTYPE html >
-<html lang="<?php language_attributes(); ?>" class="no-js">
+<html <?php language_attributes(); ?> class="no-js">
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="keywords" content="">
