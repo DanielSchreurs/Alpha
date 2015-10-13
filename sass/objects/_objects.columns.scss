@@ -1,0 +1,21 @@
+.column-default{
+  -webkit-columns: auto 2;
+  -moz-columns: auto 2;
+  columns: auto 2;
+  -webkit-column-gap: 3em;
+  -moz-column-gap: 3em;
+  -o-column-gap: 3em;
+  column-gap: 3em;
+}
+.column-default--3{
+  -webkit-columns: auto 2;
+  -moz-columns: auto 2;
+  columns: auto 2;
+  -webkit-column-gap: 3em;
+  -moz-column-gap: 3em;
+  -o-column-gap: 3em;
+  column-gap: 3em;
+}
+.large-paragraphe{
+  margin-bottom: $inuit-base-spacing-unit--large*2;
+}
