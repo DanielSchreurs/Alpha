@@ -2,7 +2,7 @@
   //max-width: 800px;
 }
 
-.ninja-forms-form input[type=text],.ninja-forms-form textarea {
+.ninja-forms-form input[type=text], .ninja-forms-form textarea {
   border: 2px solid $light_gray;
   padding: 1%;
   outline: none;
@@ -13,7 +13,7 @@
 }
 
 .ninja-forms-form {
-  select{
+  select {
     background: transparent; /* 13 */
     background-image: none; /* 13 */
     -webkit-appearance: none; /* 13 */
@@ -29,17 +29,11 @@
     @extend .transition;
     outline: none;
     position: relative;
-    &:hover,&:focus{
+    &:hover, &:focus {
       border-color: $orange_1;
     }
-    &:before{
-      display: block;
-      content: "";
-      width: 50px;
-      height: 50px;
-      background: red;
-      position: absolute;
-      top: 0;
+    &:before {
+
     }
   }
 }
@@ -49,10 +43,12 @@
 .ninja-forms-form .ninja-forms-req-symbol {
   color: $red;
 }
+
 .ninja-forms-field-error {
   background: $red;
 }
-.ninja-forms-required-items{
+
+.ninja-forms-required-items {
   font-style: italic;
 }
 
@@ -71,6 +67,7 @@
 div#ninja_forms_field_7_div_wrap {
   margin-bottom: 2em;
 }
+
 input[type=submit].ninja-forms-field {
   display: block;
   width: 100%;
@@ -84,16 +81,35 @@ input[type=submit].ninja-forms-field {
   border-radius: .2em;
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing:.2em;
+  letter-spacing: .2em;
   @extend .transition;
-  &:hover{
+  &:hover {
     color: $orange_1;
   }
 }
 
-label+.ninja-forms-field-description{
+label + .ninja-forms-field-description {
   display: none;
 }
-label:focus+.ninja-forms-field-description{
+
+label:focus + .ninja-forms-field-description {
   display: block;
+}
+.list-dropdown-wrap{
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom:  $inuit-base-spacing-unit--small;
+    right: $inuit-base-spacing-unit--small;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: $orange_1 transparent transparent transparent;
+    line-height: 0px;
+    _border-color: $orange_1 #000000 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+  }
 }
