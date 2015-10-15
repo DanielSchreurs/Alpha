@@ -45,9 +45,12 @@
   display: block;
   min-height: 50px;
 }
+.people-meta--small{
+  min-height: 30px;
+  
+}
 .people-meta--slogan{
-
+  quotes:none;
   font-family: $serif;
-  margin-top: 2em;
   font-style: italic;
 }

@@ -49,11 +49,14 @@ $inuit-layout-namespace:        grid-;
 @import "./objects/objects.article";
 @import "./objects/objects.forms";
 @import "./objects/objects.blog";
+@import "./objects/objects.listes";
+@import "./objects/objects.columns";
 
 $inuit-base-spacing-unit--small:    round($inuit-base-spacing-unit / 2);
 $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
 @import "objects/objects.nav";
 @import "objects/objects.wrappers";
+@import "objects/objects.quotes";
 
 // components
 

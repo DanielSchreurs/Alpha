@@ -7,7 +7,7 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="article">
             <h2 class="article_header"><a href="<?php the_permalink(); ?>" class="header_link"><?php the_title(); ?></a></h2>
-            <p class="article_paragraph"><?php the_content(); ?></p>
+            <?php the_content(); ?>
         </div>
     <?php endwhile;
     else: ?>

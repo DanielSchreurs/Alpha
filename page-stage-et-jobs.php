@@ -5,7 +5,7 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <h1 class="big-header"><?php the_title(); ?></h1>
         <div class="article article_paragraph">
-           <?php the_content(); ?>
+           <p class="column-default large-paragraphe"><?php echo get_the_content(); ?></p>
         </div>
     <?php endwhile;
     else: ?>
