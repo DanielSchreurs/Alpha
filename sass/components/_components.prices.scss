@@ -1,0 +1,30 @@
+.prince-container{
+  border: 1px solid $gray_1;
+  padding: $inuit-base-spacing-unit;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+  min-height: 250px;
+  text-align: center;
+  margin-bottom: $inuit-base-spacing-unit;
+}
+.price_box{
+  width: 75px;
+  height: 75px;
+  background: $gray_1;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 75px;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  font-size: $inuit-heading-size-2;
+  margin-bottom: $inuit-base-spacing-unit--small;
+}
+.price__note{
+  margin-bottom: $inuit-base-spacing-unit--small;
+  display: block;
+  font-family: $serif;
+}

@@ -79,6 +79,17 @@ function create_post_type()
             'supports' => ['title']
         )
     );
+    register_post_type('tarifs',
+        array(
+            'labels' => array(
+                'name' => __('tarifs'),
+                'singular_name' => __('Tarifs')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => false
+        )
+    );
 }
 
 function my_function_admin_bar()
@@ -132,6 +143,17 @@ function people_init()
         'equipe',
         array(
             'label' => __('Équipe'),
+            'show_ui' => true,
+            'show_in_quick_edit' => true,
+            'hierarchical' => true,
+            'show_in_menu'=>false
+        )
+    );
+    register_taxonomy(
+        'ouverture_de_dossier',
+        'tarifs',
+        array(
+            'label' => __('Associer à un service'),
             'show_ui' => true,
             'show_in_quick_edit' => true,
             'hierarchical' => true,
