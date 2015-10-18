@@ -6,6 +6,7 @@
   -moz-column-gap: 3em;
   -o-column-gap: 3em;
   column-gap: 3em;
+  margin-bottom: $inuit-base-spacing-unit;
 }
 .column-default--3{
   -webkit-columns: auto 2;
