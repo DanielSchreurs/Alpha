@@ -24,9 +24,11 @@
     <?php $categories = get_categories($args); ?>
     <?php if (!empty($categories)): ?>
         <?php foreach ($categories as $categorie): ?>
-            <h2><a class="beta" href="<?php echo(get_page_link(get_the_ID())); ?>"><?php echo($categorie->name) ?></a></h2>
-            <p><?php echo($categorie->description); ?></p>
-            <a class="btn btn--huge beta simple-gray transition btn--soft" href="<?php echo(get_page_link(get_the_ID())); ?>">En savoir plus <span class="visuallyhidden"> sur <?php echo($categorie->name) ?></span></a>
+            <div class="container-default--big">
+                <h2><a class="beta header-link" href="<?php echo(get_category_link($categorie->cat_ID)); ?>"><?php echo($categorie->name) ?></a></h2>
+                <p class="column-default"><?php echo($categorie->description); ?></p>
+                <a class="btn btn--huge beta simple-gray transition btn--soft" href="<?php echo(get_category_link($categorie->cat_ID)); ?>">En savoir plus <span class="visuallyhidden"> sur <?php echo($categorie->name) ?></span></a>
+            </div>
         <?php endforeach; ?>
     <?php else: ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
