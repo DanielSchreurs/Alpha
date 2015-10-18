@@ -52,12 +52,35 @@
                     </ul>
                 </div>
             </div>
-        <?php endif; ?>
-    <?php endwhile; ?>
     <div class="contact_container section">
-        <p class="container__header">Par téléphone</p>
-        <p class="text--center contact_meta zeta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <span class="btn btn--huge beta simple-gray transition btn--soft">04 223 09 03</span>
+        <p class="alpha"><?php the_field('titre_de_la_seconde_section'); ?></p>
+        <p class="text--center contact_meta zeta"><?php the_field('information_suplementaire_pour_lantenne'); ?></p>
+        <span class="btn btn--huge beta simple-gray transition btn--soft"><?php the_field('telephone_de_lantenne_de_reduction_de_risques'); ?></span>
     </div>
+        <div class="grid-layout">
+             <?php $location = get_field('carte_reduction'); ?>
+            <div class="grid-layout__item u-2/3 u-1/2-lap u-1/1-palm">
+                <?php if (!empty($location)): ?>
+                    <div class="acf-map carte-container carte-container--contact">
+                    <div class="marker" data-lat="<?php echo $location['lat']; ?>"
+                         data-lng="<?php echo $location['lng']; ?>"></div>
+                </div>
+                <?php endif; ?>
+            </div>
+            <div class="grid-layout__item u-1/3 u-1/2-lap u-1/1-palm">
+                <ul class="list-bare">
+                    <li class="epsilon">
+                        <span class="item-title"><?php the_field('rue_pour_lantenne_reduction_de_risque'); ?></span>
+                        <span class="item-title"><?php the_field('location_pour_lantenne_reduction_de_risque'); ?></span>
+                    </li>
+                    <li class="epsilon item-title"><?php the_field('adresse_mail_pour_lantenne_reduction_de_risque'); ?></li>
+                    <li class="epsilon item-title">GSM&nbsp;<?php the_field('telephone_de_lantenne_de_reduction_de_risques'); ?></li>
+                    <li class="epsilon item-title">fax/tel&nbsp;<?php the_field('fax_pour_lantenne_reduction_de_risques'); ?></li>
+                    <li class="epsilon item-title">Horaires&nbsp;<?php the_field('horaire_pour_lantenne_reduction_de_risques'); ?></li>
+                </ul>
+            </div>
+        </div>
+    <?php endif; ?>
+<?php endwhile; ?>
 </main>
 <?php get_footer(); ?>
