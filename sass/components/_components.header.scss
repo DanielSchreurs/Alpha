@@ -35,25 +35,44 @@
   display: inline;
 }
 
-
-.sub-menu{
-  background: $white;
-  position: absolute;
-  top: -$inuit-base-spacing-unit*20;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-  -ms-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
-  a{
-    display: block;
-    text-align: left;
-    padding: $inuit-base-spacing-unit--small;
+@media (min-width: 820px) {
+  .header--fixed .sub-menu{
+    background: $oWhite_2;
+    position: absolute;
+    top: -$inuit-base-spacing-unit*20;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    a{
+      display: block;
+      text-align: left;
+      padding: $inuit-base-spacing-unit--small;
+    }
   }
+  .header--fixed a:focus+.sub-menu,.header--fixed a:hover+.sub-menu,.header--fixed li:hover .sub-menu,.header--fixed li:active .sub-menu,.header--fixed .sub-menu--active{
+    top: 56px;
+  }
+
+    .header--fixed .menu-item-has-children{
+    position: relative;
+    &:after{
+      position: absolute;
+      bottom: 15px;
+      right: 0;
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 5px 0 5px;
+      border-color: $gray_1 transparent transparent transparent;
+    }
+  }
+
 }
-a:focus+.sub-menu,a:hover+.sub-menu,li:hover .sub-menu,li:active .sub-menu,.sub-menu--active{
-  top: $inuit-base-spacing-unit*2+4;
-}
+
 
 @media (min-width: 820px) {
   .search-form {
@@ -228,8 +247,12 @@ $size: 64px;
   }
   .header .nav {
     li > a {
-      text-align: right;
+      text-align: left ;
+      display: block;
     }
+  }
+  .sub-menu{
+    margin-left: $inuit-base-spacing-unit*1.5;
   }
   .menu-container {
     max-width: 300px;
