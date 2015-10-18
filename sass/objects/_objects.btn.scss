@@ -1,64 +1,102 @@
-.btn--huge{
-
-}
-.btn--soft{
-    border-radius: .2em;
-}
-.simple-beige{
-    color: $beige_1;
-    background: none;
-
-}
-.simple-gray{
-    color:$gray_1;
-    background: none;
-    border-color: $light_gray;
-    &:hover{
-        background: $light_gray;
-    }
+.btn {
+  word-break: keep-all;
+  display: inline-block;
 }
 
+.btn--huge {
 
+}
+
+.btn--soft {
+  border-radius: .2em;
+}
+
+.simple-beige {
+  color: $beige_1;
+  background: none;
+
+}
+
+.simple-gray {
+  color: $gray_1;
+  background: none;
+  border-color: $light_gray;
+  &:hover,&:focus {
+    background: $light_gray;
+  }
+}
 
 /* Antiman */
 .antiman {
-	background: none;
-	border: none;
-	height: 60px;
-    padding: .8em;
-    position: relative;
+  background: none;
+  border: none;
+  height: 60px;
+  padding: .8em;
+  position: relative;
 }
+
 .antiman::before,
 .antiman::after {
-	content: '';
-	//z-index: -1;
-	border-radius: inherit;
-	pointer-events: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50px;
-	height: 50px;
-	-webkit-backface-visibility: hidden;
-	transition: transform 0.3s, opacity 0.3s;
-	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-    background: red;
+  content: '';
+  //z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.3s, opacity 0.3s;
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  background: red;
 }
+
 .antiman::before {
-	border: 2px solid #37474f;
-	//opacity: 0;
-	transform: scale3d(1.2, 1.2, 1);
+  border: 2px solid #37474f;
+  //opacity: 0;
+  transform: scale3d(1.2, 1.2, 1);
 }
+
 .antiman::after {
-	background: red;
+  background: red;
 }
-.antiman:hover::before {
-	opacity: 1;
-	-webkit-transform: scale3d(1, 1, 1);
-	transform: scale3d(1, 1, 1);
+
+.antiman:hover::before,.antiman:focus::before {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
 }
-.antiman:hover::after {
-	opacity: 0;
-	-webkit-transform: scale3d(0.8, 0.8, 1);
-	transform: scale3d(0.8, 0.8, 1);
+
+.antiman:hover::after,.antiman:focus::after  {
+  opacity: 0;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+}
+
+// roud BTN
+
+.btn-round {
+  background: $orange_1;
+  color: white;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  border-radius: 1.5em;
+  border: 1px solid $orange_1;
+  &:hover,&:focus {
+    background: transparent;
+    color: $orange_1;
+  }
+
+}
+
+.btn-round--bold {
+  font-weight: bold;
+
+}
+
+.btn-round--slider {
+  position: relative;
+  top: -3em;
+
 }
