@@ -57,6 +57,7 @@ $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
 @import "objects/objects.nav";
 @import "objects/objects.wrappers";
 @import "objects/objects.quotes";
+@import "objects/objects.containers";
 
 // components
 
@@ -69,6 +70,8 @@ $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
 @import "components/components.footer";
 @import "components/components.people";
 @import "components/components.prices";
+@import "components/components.search";
+@import "components/components.pagination";
 
 //Trumps
 @import "../bower_components/inuit-widths/trumps.widths";
