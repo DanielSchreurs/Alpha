@@ -1,0 +1,66 @@
+// footer
+
+
+.footer{
+  input[type=text]{
+    color: $orange_1;
+    border: none;
+    padding: 2%;
+    @extend .btn--soft;
+    display: block;
+    width: 100%;
+    -webkit-border-radius: .5em .5em 0 0;
+    -moz-border-radius: .5em .5em 0 0;
+    border-radius: .5em .5em 0 0;
+
+  }
+  input[type=submit]{
+    background: $blue_2;
+    border: 1px solid $blue_2;
+    -webkit-border-radius: 0 0 .5em .5em;
+    -moz-border-radius: 0 0 .5em .5em;
+    border-radius: 0 0 .5em .5em;
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+// page not found
+.search-form-container--no-result{
+  input[type=submit]{
+    border: none;
+    background: $orange_1;
+    @extend .transition--soft;
+    display: inline-block;
+    width: 16.5%;
+    margin-left: 2.5%;
+    padding: 1%;
+    @extend .btn;
+    @extend .btn--soft;
+  }
+  label{
+    @extend .visuallyhidden;
+  }
+  input[type=text]{
+    border: 1px solid $orange_1;
+    -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    border-radius: .2em;
+    padding: 1%;
+    display: inline-block;
+    width: 76.5%;
+    margin-right: 2.5%;
+  }
+}
+
+
+// highliting elements
+.search-everything-highlight-color{
+  background: white !important;
+  color: $orange_1  !important;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+}
