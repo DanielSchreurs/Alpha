@@ -15,13 +15,7 @@
     <?php if (!empty($query)): ?>
         <ul class="contact-adresse grid-layout">
             <?php while ($query->have_posts()) : $query->the_post(); ?>
-                <li class="grid-layout__item u-1/3 u-1/2-lap u-1/1-palm">
-                    <div class="grey-blog">
-                        <span
-                            class="grey-blog__item grey-blog__item--light"><?php the_field('nom_de_contact'); ?></span>
-                        <span class="grey-blog__item"><?php the_field('adresse'); ?></span>
-                    </div>
-                </li>
+                <?php get_template_part('content','contact'); ?>
             <?php endwhile; ?>
         </ul>
     <?php endif; ?>
@@ -74,9 +68,9 @@
                         <span class="item-title"><?php the_field('location_pour_lantenne_reduction_de_risque'); ?></span>
                     </li>
                     <li class="epsilon item-title"><?php the_field('adresse_mail_pour_lantenne_reduction_de_risque'); ?></li>
-                    <li class="epsilon item-title">GSM&nbsp;<?php the_field('telephone_de_lantenne_de_reduction_de_risques'); ?></li>
-                    <li class="epsilon item-title">fax/tel&nbsp;<?php the_field('fax_pour_lantenne_reduction_de_risques'); ?></li>
-                    <li class="epsilon item-title">Horaires&nbsp;<?php the_field('horaire_pour_lantenne_reduction_de_risques'); ?></li>
+                    <li class="epsilon item-title"><?php the_field('telephone_de_lantenne_de_reduction_de_risques'); ?></li>
+                    <li class="epsilon item-title"><?php the_field('fax_pour_lantenne_reduction_de_risques'); ?></li>
+                    <li class="epsilon item-title"><?php the_field('horaire_pour_lantenne_reduction_de_risques'); ?></li>
                 </ul>
             </div>
         </div>
