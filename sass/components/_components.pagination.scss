@@ -1,0 +1,14 @@
+.nav-links{
+  text-align: center;
+  
+}
+.page-numbers{
+  margin-right: 1em;
+  @extend .btn;
+  @extend .simple-gray;
+}
+.page-numbers.current{
+  background: $gray_1;
+  color: white;
+  cursor: default;
+}
