@@ -10,7 +10,6 @@ function theme_name_scripts()
     wp_enqueue_script('slider', get_template_directory_uri() . '/js/slider.js', array('jquery'), '1.0.0', true);
 }
 
-
 function gkp_html_minify_start()
 {
     ob_start('gkp_html_minyfy_finish');
@@ -28,7 +27,7 @@ function register_my_menus()
 
 function new_nav_menu_items($items)
 {
-    $homelink = '<li class="main-vavigation__link main-vavigation__link--home"><a href="' . home_url('/') . '">' . __('Home') . '</a></li>';
+    $homelink = '<li class=""><a href="' . home_url('/') . '">' . __('Home') . '</a></li>';
     $items = $homelink . $items;
     return $items;
 }
@@ -124,7 +123,7 @@ function people_init()
             'show_ui' => true,
             'show_in_quick_edit' => true,
             'hierarchical' => true,
-            'show_in_menu'=>false
+            'show_in_menu' => false
         )
     );
     register_taxonomy(
@@ -135,7 +134,7 @@ function people_init()
             'show_ui' => true,
             'show_in_quick_edit' => true,
             'hierarchical' => true,
-            'show_in_menu'=>false
+            'show_in_menu' => false
         )
     );
     register_taxonomy(
@@ -146,7 +145,7 @@ function people_init()
             'show_ui' => true,
             'show_in_quick_edit' => true,
             'hierarchical' => true,
-            'show_in_menu'=>false
+            'show_in_menu' => false
         )
     );
     register_taxonomy(
@@ -157,7 +156,7 @@ function people_init()
             'show_ui' => true,
             'show_in_quick_edit' => true,
             'hierarchical' => true,
-            'show_in_menu'=>false
+            'show_in_menu' => false
         )
     );
 }
