@@ -2,6 +2,9 @@
   //max-width: 800px;
 }
 
+.ninja-forms-required-items,.ninja-forms-response-msg.ninja-forms-error-msg{
+  display: none;
+}
 .ninja-forms-form input[type=text], .ninja-forms-form textarea {
   border: 2px solid $light_gray;
   padding: 1%;
