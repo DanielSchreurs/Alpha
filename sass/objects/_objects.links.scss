@@ -1,25 +1,33 @@
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 
 }
-.footer__link{
-    color: $white;
-    padding-bottom: .3em;
-    display: inline-block;
-   &:after{
-       content: "";
-       display: block;
-       height: 1px ;
-       width: 110%;
-       background:white;
-   }
-    &:hover,&:focus{
-        color: $orange_1;
-    }
+
+.footer__link {
+  background-position: 0 1.375rem;
+  background-size: 1px 1px;
+  padding-bottom: .3em;
+  display: inline-block;
+  font-size: $inuit-heading-size-5;
+  text-decoration: none;
+  color: $white;
+  background-image: linear-gradient($white 50%, $white 50%);
+  background-repeat: repeat-x;
+  &:hover,&:focus {
+    color: $blue_2;
+    background-image: linear-gradient($white 50%, $blue_2 50%);
+  }
+  @extend .transition--soft;
+
 }
-.link--logo{
-  color: black;
+
+.link--logo {
+  color: $orange_1;
 }
-.header_link{
+
+.header_link {
   color: inherit;
+}
+.link--orange{
+  color: $orange_1;
 }
