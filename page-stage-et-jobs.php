@@ -13,7 +13,8 @@
     <?php endif; ?>
     <?php if (function_exists('ninja_forms_display_form')): ?>
         <div class="form-wrapper">
-          <?php ninja_forms_display_form(5); ?>
+            <p><?php _e('Les champs munis d’une '); ?><span class="ninja-forms-req-symbol">*</span><?php _e('sont obligatoires'); ?></p>
+            <?php ninja_forms_display_form(5); ?>
         </div>
     <?php endif; ?>
 </main>
