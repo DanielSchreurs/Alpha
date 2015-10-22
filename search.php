@@ -17,10 +17,10 @@
 get_header(); ?>
 <!--[if IE 8]
     <p class="section__paragraphe">Votre Navigateur n’est pas à jour. Mettez-le à jour<a href="http://browsehappy.com/">ici.</a></p><![endif]-->
-<main role="main" class="main wrapper">
+<main role="main" class="main wrapper search-page">
 
     <?php if (have_posts()) : ?>
-        <h1 class="big-header"><?php echo(__('Résultats pour : ') . get_search_query()); ?></h1>
+        <h1 class="text--right"><?php echo(__('Résultats pour : ') . get_search_query()); ?></h1>
         <?php
         // Start the loop.
         $_SESSION['i'] = 0;
