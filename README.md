@@ -4,8 +4,13 @@
 --------------------------------------------------------------------------------
 
 # À faire (encore beaucoup)
-- [] Faire une maquette en depuis des fichiers jade
-- [] Rendre la maquette responsive.
-- [] Faire en sorte que tout cela devienne un `theme` Wordpress.
-- [] Le défendre (avec le sourire) à la personne responsable.
+- [x] Faire une maquette en depuis des fichiers jade
+- [x] Faire en sorte que tout cela devienne un `theme` Wordpress.
 - [x] Ajouter un sprite SVG compilé depuis GRUNT
+- [x] Bug "serif " sur la page prix
+- [x] Style page `singe.php`
+- [ ] Vcard
+- [ ] Footer style
+- [ ] Search form in the header
+- [ ] Gtmetrix améliorable (voire les stratégies de concaténation des fichiers assets dans WP)
+- [ ] Rendre la maquette responsive.
