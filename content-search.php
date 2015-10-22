@@ -6,7 +6,7 @@
         <?php endif; ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class('container-default'); ?>>
                 <?php the_title(sprintf('<h3 class="entry-title beta"><a class="link--orange" href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h3>'); ?>
-                <?php the_content() ; ?>
+                <?= wp_trim_words( get_the_content(), 100, '...' ); ?>
             </article><!-- #post-## -->
     </section>
 <?php endif; ?>
