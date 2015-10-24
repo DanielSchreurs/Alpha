@@ -1,14 +1,13 @@
-/**
-* fixe height
-*/
-.slider-container{
-    background: url(./img/slider.png);
-    background-attachment: fixed;
-    background-size: cover;
+.slider-container {
+  background: url(./img/slider.png);
+  background-attachment: fixed;
+  background-size: cover;
 }
-.slider-wrapper{
-    position: relative;
+
+.slider-wrapper {
+  position: relative;
 }
+
 .slider {
   overflow: hidden;
   margin: 20px auto 0 auto;
@@ -23,15 +22,15 @@
 }
 
 .slider ul li {
-    color: $orange_1;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 800px;
-    height: 300px;
-    text-align: center;
-    line-height: 300px;
-    font-weight: 600;
+  color: $orange_1;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  font-weight: 600;
 }
 
 .control_prev, .control_next {
@@ -49,11 +48,11 @@
 }
 
 .control_prev {
-    left: 0;
+  left: 0;
 }
 
 .control_next {
-    right: 0;
+  right: 0;
 }
 
 .slider_option {
@@ -63,28 +62,30 @@
   font-size: 18px;
 }
 
-
-
-
-
-.slider__item--active{
-    padding-top: 20%;
-    height: 50vh;
+.slider__item--active {
+  padding-top: 20%;
+  height: 50vh;
 }
 
+.target {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
 
-.target{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
+.target__link {
+  margin-left: .5em;
 }
-.target__link{
-    margin-left: .5em;
+
+.target__link--active {
+  .shape-boullet {
+    fill: $orange_1;
+  }
 }
-.target__link--active{
-    .shape-boullet{
-        fill:$orange_1;
-    }
+@media (max-width: 650px) {
+  .slider-container{
+    @include accessibility;
+  }
 }

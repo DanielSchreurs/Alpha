@@ -270,3 +270,8 @@ $size: 64px;
     overflow-y: scroll;
   }
 }
+@media (max-width: $lap) {
+  .big-header.text--right{
+    text-align: left !important;
+  }
+}

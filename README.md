@@ -11,7 +11,7 @@
 - [x] Style page `singe.php`
 - [x] Vcard
 - [x] Search form in the header
-- [ ] Page help
-- [ ] Footer style
+- [x] Page help
+- [x] Footer style
+- [x] Rendre le tout responsive.
 - [ ] Gtmetrix améliorable (voire les stratégies de concaténation des fichiers assets dans WP)
-- [ ] Rendre la maquette responsive.

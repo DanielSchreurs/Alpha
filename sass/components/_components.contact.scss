@@ -12,3 +12,8 @@
     padding-bottom: 2.3em;
     display: block;
 }
+@media (max-width: 600px) {
+    .container__header{
+        font-size: $inuit-heading-size-1;
+    }
+}

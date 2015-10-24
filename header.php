@@ -20,7 +20,7 @@
                 <svg viewBox="0 0 100 100" class="icon main-logo">
                     <use xlink:href="#shape-logo"></use>
                 </svg>
-                <p class="slogan">Centre Alpha</p>
+                <p class="slogan"><?php bloginfo('name'); ?></p>
             </a>
             <div class="menu-container transition logo grid-layout__item u-9/12"><a title="Ouvrir la navigation"
                                                                                     href="#" class="open_nav">
@@ -56,6 +56,7 @@
                 wp_nav_menu($defaults);
 
                 ?>
+                <a href="#" title="fermer le formulaire de recherche" class="close-form-btn">fermer le formulaire de recherche</a>
             </div>
         </div>
     </div>
