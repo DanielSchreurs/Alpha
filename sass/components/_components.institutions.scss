@@ -1,0 +1,16 @@
+.prince-container--institution{
+  min-height: 280px;
+}
+.institution__tel__title,.institution__tel__open{
+  margin-bottom: 1em;
+  min-height: 50px;
+}
+.institution__tel{
+
+  span{
+    font-size: $inuit-heading-size-5;
+  }
+}
+.institution__tel+.institution__tel{
+  margin-top: 1em;
+}
