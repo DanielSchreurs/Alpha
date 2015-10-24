@@ -267,5 +267,6 @@ $size: 64px;
   }
   .menu-container--open {
     right: 0;
+    overflow-y: scroll;
   }
 }

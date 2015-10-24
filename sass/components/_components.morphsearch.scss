@@ -1,0 +1,99 @@
+.footer li.morphsearch {
+  display: none;
+}
+
+.header .nav .morphsearch__btn, .close-form-btn {
+  display: none;
+}
+
+.morphsearch {
+  label, input {
+    @extend .block;
+    text-align: left;
+  }
+  input[type=submit] {
+    @extend .ninja-forms-field;
+    max-width: 80%;
+    font-size: $inuit-heading-size-4;
+    text-align: center;
+    margin-top: 1em;
+  }
+  input[type=text] {
+    @extend .ninja-forms-form;
+    max-width: 80%;
+    font-size: $inuit-heading-size-4;
+    color: black;
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 820px) {
+  .close-form-btn--active {
+    display: block;
+    position: absolute;
+  }
+  li.morphsearch a {
+    padding: 0;
+    position: relative;
+    top: $inuit-base-spacing-unit--small*0.8;
+    cursor: pointer;
+  }
+  .header .nav .morphsearch__btn {
+    display: inline-block;
+  }
+  .no-js {
+    .morphsearch form {
+      position: absolute;
+      top: 50px;
+      background: $oWhite_2;
+      right: 0;
+      padding: $inuit-base-spacing-unit;
+    }
+  }
+  .js {
+    .morphsearch {
+      background: $light_gray;
+      padding: 0 $inuit-base-spacing-unit--small;
+      margin-bottom: 0;
+      padding: $inuit-base-spacing-unit--small+4 $inuit-base-spacing-unit--small - 4;
+      div {
+
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-top: 10%;
+        padding-right: $inuit-base-spacing-unit--small;
+        padding-left: $inuit-base-spacing-unit--small;
+      }
+      form {
+        position: fixed;
+        bottom: -$inuit-base-spacing-unit*2000;
+        right: 0;
+        left: 0;
+        background: $oWhite_1;
+      }
+      label {
+        font-size: $inuit-heading-size-1;
+      }
+      input[type=text] {
+        border: none;
+        background: none;
+        border-bottom: 3px solid $orange_1;
+        outline: none;
+        font-size: $inuit-heading-size-1;
+        display: block;
+        width: 100%;
+        max-width: none;
+      }
+      input[type=submit] {
+        max-width: none;
+      }
+    }
+    .morphsearch--active {
+      form {
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+}

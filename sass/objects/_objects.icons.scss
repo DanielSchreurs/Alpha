@@ -7,7 +7,9 @@ body>svg:first-child{
     width: 32px;
     height: 32px;
 }
-
+.icon--search{
+  fill: $orange_1;
+}
 .search-tool{
   width: 20px;
   height: 20px;
@@ -34,4 +36,41 @@ body>svg:first-child{
 -moz-transform: rotate(180deg) ;
 -o-transform: rotate(180deg) ;
 -ms-transform: rotate(180deg) ;
+}
+
+
+.close-form-btn {
+  width: 80px;
+  height: 80px;
+  color: transparent;
+  background: rgba(240, 240, 240, 0.84);
+  position: absolute;
+  right: percentage(426/1905);
+  top: $inuit-base-spacing-unit;
+}
+
+.close-form-btn::before, .close-form-btn::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 2px;
+  width: 80px;
+  margin-top: -1px;
+  background: black;
+  top: 50%;
+  left: 0;
+}
+.close-form-btn::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.close-form-btn::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }

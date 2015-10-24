@@ -15,7 +15,7 @@
   background-repeat: repeat-x;
   &:hover,&:focus {
     color: $blue_2;
-    background-image: linear-gradient($white 50%, $blue_2 50%);
+    background-image: linear-gradient($blue_2 50%, $blue_2 50%);
   }
   @extend .transition--soft;
 

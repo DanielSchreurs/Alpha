@@ -6,6 +6,7 @@
 function theme_name_scripts()
 {
     wp_enqueue_style('daniel', get_stylesheet_directory_uri() . '/css/main.css');
+    wp_enqueue_script('modernzr', get_template_directory_uri() . '/js/modernizr-2.8.3.min.js');
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('slider', get_template_directory_uri() . '/js/slider.js', array('jquery'), '1.0.0', true);
 }
@@ -19,16 +20,23 @@ function register_my_menus()
 {
     register_nav_menus(
         array(
-            'header-menu' => __('Main '),
-            'liens_utiles' => __('Liens utiles')
+            'header-menu' => __('Main'),
+            'liens_utiles' => __('Liens utiles'),
         )
     );
 }
 
-function new_nav_menu_items($items)
+function new_nav_menu_items($items, $arg)
 {
-    $homelink = '<li class=""><a href="' . home_url('/') . '">' . __('Home') . '</a></li>';
-    $items = $homelink . $items;
+    $first = true;
+    if (($arg->theme_location === 'header-menu') && ($first)) {
+        $homelink = '<li class=""><a href="' . home_url('/') . '">' . __('Home') . '</a></li>';
+        $items = $homelink . $items . '<li class="morphsearch"><a href="#" title="faire une recherche" class="morphsearch__btn"><svg viewBox="0 0 100 100" class="icon icon--search">
+                        <use xlink:href="#shape-search"></use>
+                    </svg></a>' . get_search_form(false) . '</li>';
+        return $items;
+    }
+    $first = false;
     return $items;
 }
 
@@ -167,4 +175,4 @@ add_action('wp_enqueue_scripts', 'theme_name_scripts');
 add_action('get_header', 'gkp_html_minify_start');
 add_action('init', 'register_my_menus');
 add_filter('show_admin_bar', 'my_function_admin_bar');
-add_filter('wp_nav_menu_items', 'new_nav_menu_items');
+add_filter('wp_nav_menu_items', 'new_nav_menu_items', 10, 2);
