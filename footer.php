@@ -30,13 +30,17 @@
                 <?php while ($query->have_posts()) : $query->the_post(); ?>
                 <?php if (get_the_ID() === 10): ?>
                     <p class="beta footer_header"><?php _e('Informations'); ?></p>
-                    <p class="gamma footer_header"><?php _e('Centre Alpha'); ?></p>
+                    <p class="gamma footer_header fn"><?php _e('Centre Alpha'); ?></p>
                     <ul class="list-bare footer__navigation">
-                        <li><?php the_field('telephone'); ?></li>
-                        <li><?php the_field('fax'); ?></li>
+                        <li class="tel"><?php the_field('telephone'); ?></li>
+                        <li class="fax"><?php the_field('fax'); ?></li>
                         <li><?php the_field('n_dentreprise'); ?></li>
                         <li><?php the_field('compte'); ?></li>
                         <li><?php the_field('horaires'); ?></li>
+                        <li class="visuallyhidden">
+                            <span class="street-address"><?php the_field('rue'); ?></span>
+                            <span class="locality"><?php the_field('location'); ?></span>
+                        </li>
                     </ul>
                     <p class="gamma footer_header"><?php the_field('titre_de_la_seconde_section'); ?></p>
                     <ul class="list-bare footer__navigation">
@@ -57,7 +61,7 @@
                     <li><a href="#" class="delta footer__link link tel">Skype</a></li>
                 </ul>
             </div>
-            <div class="grid-layout__item u-1/4 u-1/2-lap u-1/1-palm vcard">
+            <div class="grid-layout__item u-1/4 u-1/2-lap u-1/1-palm">
                 <p class="beta footer_header">Liens utiles</p>
                 <?php
                 $defaults = array(
@@ -80,7 +84,6 @@
                 );
                 wp_nav_menu($defaults);
                 ?>
-                <?php get_search_form(true); ?>
             </div>
         </div>
     </footer>
