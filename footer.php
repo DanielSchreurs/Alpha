@@ -1,7 +1,7 @@
 <div class="footer">
     <footer class="wrapper">
         <div class="grid-layout">
-            <div class="grid-layout__item u-1/4 u-1/2-lap u-1/1-palm">
+            <div class="grid-layout__item u-1/3 u-1/3-lap u-1/1-palm">
                 <p class="beta footer_header"><?php _e('Navigation'); ?></p>
                 <?php
                 $defaults = array(
@@ -25,7 +25,7 @@
                 wp_nav_menu($defaults);
                 ?>
             </div>
-            <div class="grid-layout__item u-1/4 u-1/2-lap u-1/1-palm vcard">
+            <div class="grid-layout__item u-1/3 u-1/3-lap u-1/1-palm vcard">
              <?php $query = new WP_Query(array('post_type' => 'page')); ?>
                 <?php while ($query->have_posts()) : $query->the_post(); ?>
                 <?php if (get_the_ID() === 10): ?>
@@ -52,16 +52,7 @@
                 <?php endif; ?>
                 <?php endwhile; ?>
             </div>
-            <div class="grid-layout__item u-1/4 u-1/2-lap u-1/1-palm vcard">
-                <p class="beta footer_header">Nous suivre</p>
-                <ul class="list-bare footer__navigation">
-                    <li><a href="#" class="delta footer__link link">Facebook</a></li>
-                    <li><a href="#" class="delta footer__link link">Twitter</a></li>
-                    <li><a href="#" class="delta footer__link link tel">Linkedin</a></li>
-                    <li><a href="#" class="delta footer__link link tel">Skype</a></li>
-                </ul>
-            </div>
-            <div class="grid-layout__item u-1/4 u-1/2-lap u-1/1-palm">
+            <div class="grid-layout__item u-1/3 u-1/3-lap u-1/1-palm">
                 <p class="beta footer_header">Liens utiles</p>
                 <?php
                 $defaults = array(

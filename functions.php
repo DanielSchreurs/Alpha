@@ -97,6 +97,17 @@ function create_post_type()
             'supports' => false
         )
     );
+    register_post_type('institutions',
+        array(
+            'labels' => array(
+                'name' => __('institutions'),
+                'singular_name' => __('Institutions')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => false
+        )
+    );
 }
 
 function my_function_admin_bar()

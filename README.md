@@ -9,8 +9,9 @@
 - [x] Ajouter un sprite SVG compilé depuis GRUNT
 - [x] Bug "serif " sur la page prix
 - [x] Style page `singe.php`
-- [ ] Vcard
+- [x] Vcard
+- [x] Search form in the header
+- [ ] Page help
 - [ ] Footer style
-- [ ] Search form in the header
 - [ ] Gtmetrix améliorable (voire les stratégies de concaténation des fichiers assets dans WP)
 - [ ] Rendre la maquette responsive.
