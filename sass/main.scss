@@ -75,6 +75,7 @@ $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
 @import "components/components.morphsearch";
 @import "components/components.pagination";
 @import "components/components.institutions";
+@import "components/components.questions";
 
 //Trumps
 @import "../bower_components/inuit-widths/trumps.widths";

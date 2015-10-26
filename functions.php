@@ -102,6 +102,18 @@ function create_post_type()
             'menu_icon' => 'dashicons-tickets-alt'
         )
     );
+    register_post_type('questions',
+        array(
+            'labels' => array(
+                'name' => __('questions'),
+                'singular_name' => __('Questions')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => ['title'],
+            'menu_icon' => 'dashicons-welcome-learn-more'
+        )
+    );
     register_post_type('institutions',
         array(
             'labels' => array(
@@ -204,7 +216,7 @@ function custom_menu_page_removing() {
     remove_menu_page( 'edit.php?post_type=acf' ); //ACF
 }
 
-add_action( 'admin_init', 'custom_menu_page_removing' );
+//add_action( 'admin_init', 'custom_menu_page_removing' );
 add_action('init', 'people_init');
 add_action('init', 'create_post_type');
 add_action('wp_enqueue_scripts', 'theme_name_scripts');
