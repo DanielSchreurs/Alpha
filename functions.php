@@ -50,7 +50,8 @@ function create_post_type()
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => false
+            'supports' => false,
+            'menu_icon' => 'dashicons-admin-home'
         )
     );
     register_post_type('slider',
@@ -61,7 +62,8 @@ function create_post_type()
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['title']
+            'supports' => ['title'],
+            'menu_icon' => 'dashicons-slides'
         )
     );
     register_post_type('equipe',
@@ -72,7 +74,8 @@ function create_post_type()
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['title']
+            'supports' => ['title'],
+            'menu_icon' => 'dashicons-admin-users'
         )
     );
     register_post_type('contact',
@@ -83,7 +86,8 @@ function create_post_type()
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['title']
+            'supports' => ['title'],
+            'menu_icon' => 'dashicons-nametag'
         )
     );
     register_post_type('tarifs',
@@ -94,7 +98,8 @@ function create_post_type()
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => false
+            'supports' => false,
+            'menu_icon' => 'dashicons-tickets-alt'
         )
     );
     register_post_type('institutions',
@@ -105,7 +110,8 @@ function create_post_type()
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => false
+            'supports' => false,
+            'menu_icon' => 'dashicons-id'
         )
     );
 }
@@ -180,6 +186,25 @@ function people_init()
     );
 }
 
+/*
+ * Clean admin Panel
+ */
+
+
+function custom_menu_page_removing() {
+    remove_menu_page( 'index.php' ); //Dashboard
+    remove_menu_page( 'edit.php' ); // Posts
+    remove_menu_page( 'tools.php' ); // Tools
+    remove_menu_page( 'edit-comments.php' ); //Comments
+    remove_menu_page( 'users.php' ); //Users
+    remove_menu_page( 'upload.php' ); //Media
+    remove_menu_page( 'themes.php' ); // Apparance
+    remove_menu_page( 'plugins.php' ); //Plugins
+    remove_menu_page( 'options-general.php' ); //Settings
+    remove_menu_page( 'edit.php?post_type=acf' ); //ACF
+}
+
+add_action( 'admin_init', 'custom_menu_page_removing' );
 add_action('init', 'people_init');
 add_action('init', 'create_post_type');
 add_action('wp_enqueue_scripts', 'theme_name_scripts');

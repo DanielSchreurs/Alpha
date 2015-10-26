@@ -6,9 +6,9 @@
   min-height: 50px;
 }
 .institution__tel{
-
+  font-weight: bold;
   span{
-    font-size: $inuit-heading-size-5;
+    font-size: 0;
   }
 }
 .institution__tel+.institution__tel{
