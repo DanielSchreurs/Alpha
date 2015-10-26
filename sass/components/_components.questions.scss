@@ -1,7 +1,13 @@
-.questions{
+.questions-container {
+  border-left: 1px solid $gray_1;
+  padding-left: $inuit-base-spacing-unit;
+  margin-bottom: $inuit-base-spacing-unit;
+}
+
+.questions {
   font-weight: bold;
 }
-.answer{
-  margin-bottom: $inuit-base-spacing-unit--large;
+
+.answer {
   font-style: italic;
 }

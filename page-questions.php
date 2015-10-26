@@ -12,10 +12,8 @@
         <h1 class="article_header"><?php _e('Sorry, no posts matched your criteria.'); ?></h1>
     <?php endif; ?>
     <?php $query = new WP_Query(array('orderby' => 'title', 'order' => 'ASC', 'post_type' => 'questions')); ?>
-    <dl class="Toute personne ayant un problème de consommation à quelque produit que ce soit (alcool,  tabac,  produits stupéfiants,  jeu,  cyberdépendance,...) ainsi que son entourage.">
-        <?php while ($query->have_posts()) : $query->the_post(); ?>
-            <?php get_template_part('content', 'questions'); ?>
-        <?php endwhile; ?>
-    </dl>
+    <?php while ($query->have_posts()) : $query->the_post(); ?>
+        <?php get_template_part('content', 'questions'); ?>
+    <?php endwhile; ?>
 </main>
 <?php get_footer(); ?>
