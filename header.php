@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700" rel="stylesheet" type="text/css">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <?php get_template_part('favicon') ?>
     <?php wp_head(); ?>
     <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 </head>
