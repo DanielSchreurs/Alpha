@@ -10,12 +10,12 @@
   display: inline-block;
   font-size: $inuit-heading-size-5;
   text-decoration: none;
-  color: $white;
-  background-image: linear-gradient($white 50%, $white 50%);
+  color: $blue_2;
+  background-image: linear-gradient($blue_2 50%, $blue_2 50%);
   background-repeat: repeat-x;
   &:hover,&:focus {
-    color: $blue_2;
-    background-image: linear-gradient($blue_2 50%, $blue_2 50%);
+    color: $orange_1;
+    background-image: linear-gradient($orange_1 50%, $orange_1 50%);
   }
   @extend .transition--soft;
 

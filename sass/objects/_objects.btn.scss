@@ -25,6 +25,16 @@
     background: $light_gray;
   }
 }
+.simple-white {
+  color: white;
+  background: none;
+  border-color: white;
+  &:hover,&:focus {
+    background: white;
+    color: $orange_1;
+  }
+}
+
 
 /* Antiman */
 .antiman {
@@ -99,4 +109,8 @@
   position: relative;
   top: -3em;
 
+}
+
+.not-btn{
+  cursor: default;
 }

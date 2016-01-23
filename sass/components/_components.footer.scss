@@ -1,6 +1,6 @@
 .footer {
-  background: $orange_1;
-  color: white;
+  background: $light_gray;
+  color:$blue_2;
   padding-top: 3em;
   margin-top: 5em;
 }
@@ -22,9 +22,12 @@
 .footer_nav, .footer_nav ul {
   list-style-type: none;
   a {
-    color: $white !important;
+    color: $blue_2 !important;
     display: block;
   }
+}
+.copy p{
+  color: white ;
 }
 
 .footer__navigation ul.sub-menu {
