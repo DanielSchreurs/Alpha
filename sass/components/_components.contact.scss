@@ -4,13 +4,14 @@
 .container__header{
     font-size: $inuit-heading-size-1*2;
     font-weight: 100;
-    color: $blue_2;
+    color: white;
     text-align: center;
     padding-bottom: 10px;
 }
 .contact_meta{
     padding-bottom: 2.3em;
     display: block;
+    color: white;
 }
 @media (max-width: 600px) {
     .container__header{

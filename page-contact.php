@@ -38,10 +38,10 @@
                             <span class="item-title"><?php the_field('rue'); ?></span>
                             <span class="item-title"><?php the_field('location'); ?></span>
                         </li>
-                        <li class="epsilon item-title"><?php the_field('telephone'); ?></li>
-                        <li class="epsilon item-title"><?php the_field('fax'); ?></li>
-                        <li class="epsilon item-title"><?php the_field('n_dentreprise'); ?></li>
-                        <li class="epsilon item-title"><?php the_field('compte'); ?></li>
+                        <li class="epsilon item-title">Tél&nbsp;:<?php the_field('telephone'); ?></li>
+                        <li class="epsilon item-title">Fax&nbsp;:<?php the_field('fax'); ?></li>
+                        <li class="epsilon item-title">N° d'Entreprise&nbsp;:<?php the_field('n_dentreprise'); ?></li>
+                        <li class="epsilon item-title">Compte&nbsp;:<?php the_field('compte'); ?></li>
                         <li class="epsilon item-title"><?php the_field('horaires'); ?></li>
                     </ul>
                 </div>
@@ -68,8 +68,8 @@
                         <span class="item-title"><?php the_field('location_pour_lantenne_reduction_de_risque'); ?></span>
                     </li>
                     <li class="epsilon item-title"><?php the_field('adresse_mail_pour_lantenne_reduction_de_risque'); ?></li>
-                    <li class="epsilon item-title"><?php the_field('telephone_de_lantenne_de_reduction_de_risques'); ?></li>
-                    <li class="epsilon item-title"><?php the_field('fax_pour_lantenne_reduction_de_risques'); ?></li>
+                    <li class="epsilon item-title">Tél&nbsp;:<?php the_field('telephone_de_lantenne_de_reduction_de_risques'); ?></li>
+                    <li class="epsilon item-title">Fax&nbsp;:<?php the_field('fax_pour_lantenne_reduction_de_risques'); ?></li>
                     <li class="epsilon item-title"><?php the_field('horaire_pour_lantenne_reduction_de_risques'); ?></li>
                 </ul>
             </div>
