@@ -1997,7 +1997,7 @@ label:focus + .ninja-forms-field-description {
   text-align: center;
   padding: 24px;
   font-weight: bold;
-  color: #dddddd;
+  color: #a6a6a6;
   min-height: 100px; }
 
 .people__body {
@@ -2161,7 +2161,7 @@ label:focus + .ninja-forms-field-description {
       bottom: -48000px;
       right: 0;
       left: 0;
-      background: rgba(255, 255, 255, 0.98); }
+      background: white; }
     .js .morphsearch label {
       font-size: 36px; }
     .js .morphsearch input[type=text] {
